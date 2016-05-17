@@ -63,10 +63,8 @@ public class CreditAccountTest {
 		float withdrawals = (100f + 100f * withdrawalCommision) + (200f + 200f * withdrawalCommision);
 		float expectedBalance = credit - withdrawals + 350;
 
-		assertEquals("4 months worth of fees and no penalty should have been deducted.", expectedBalance,
-				actualBalance, 0);
+		assertEquals("4 months worth of fees and no penalty should have been deducted.", expectedBalance, actualBalance,
+				0);
 	}
-
-	
 
 }
